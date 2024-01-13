@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="align">
+        <div class="turn-container">
+            <h3>Player's Turn</h3>
+            <div class="turn-box"></div>
+            <div class="bg"></div>
+        </div>
+    </div>
+    
+    <div class="align">
+        <div class="main-grid" id="board">
+            <div class="box" id="box00" onclick="playerMove(0, 0)"></div>
+            <div class="box" id="box01" onclick="playerMove(0, 1)"></div>
+            <div class="box" id="box02" onclick="playerMove(0, 2)"></div>
+            <div class="box" id="box10" onclick="playerMove(1, 0)"></div>
+            <div class="box" id="box11" onclick="playerMove(1, 1)"></div>
+            <div class="box" id="box12" onclick="playerMove(1, 2)"></div>
+            <div class="box" id="box20" onclick="playerMove(2, 0)"></div>
+            <div class="box" id="box21" onclick="playerMove(2, 1)"></div>
+            <div class="box" id="box22" onclick="playerMove(2, 2)"></div>
+        </div>
+    </div>
+
+    <div class="align">
+        <button id="play-again" onclick="resetGame()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
